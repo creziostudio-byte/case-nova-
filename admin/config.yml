@@ -1,0 +1,122 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Netlify Identity handles login; Git Gateway commits changes to this repo
+# on the client's behalf. Both must be enabled in the Netlify dashboard
+# under Site settings → Identity, before this admin panel will work.
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - name: "site"
+        label: "Hero & Contact Info"
+        file: "data/site.json"
+        description: "Homepage hero text and the contact details shown across the site (footer, WhatsApp button, email links)."
+        fields:
+          - label: "Hero (Homepage)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline — first line", name: "heading_line1", widget: "string", hint: "e.g. A New Chapter" }
+              - { label: "Headline — emphasized word (shown in gold italics)", name: "heading_emphasis", widget: "string", hint: "e.g. Home." }
+              - { label: "Byline", name: "byline", widget: "string", hint: "e.g. By Vishakha Bhola · India & Beyond" }
+              - { label: "Quote", name: "quote", widget: "text", hint: "The wrapped phrases like <span class=\"gold\">...</span> show in gold — keep those tags around a phrase to keep it highlighted, or remove them to make it plain text." }
+          - label: "Contact Info (site-wide)"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone (display)", name: "phone_display", widget: "string", hint: "e.g. +91 88008 97401" }
+              - { label: "Phone (digits only, with country code, no +)", name: "phone_e164", widget: "string", hint: "e.g. 918800897401 — used for WhatsApp/tel links" }
+              - { label: "Hosted By", name: "hosted_by", widget: "string" }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - name: "testimonials"
+        label: "Testimonials"
+        file: "data/testimonials.json"
+        description: "Reviews shown in the Reviews section on the homepage."
+        fields:
+          - label: "Reviews"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.name}} — {{fields.category}}, {{fields.location}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string", hint: "e.g. Mrs. Ananya Mehta" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options: ["Residential", "Commercial"]
+              - { label: "Location", name: "location", widget: "string", hint: "e.g. Pune, Maharashtra" }
+              - { label: "Review Text", name: "text", widget: "text" }
+
+  - name: "residential"
+    label: "Residential Portfolio"
+    files:
+      - name: "residential"
+        label: "Residential Projects"
+        file: "data/residential.json"
+        description: "Projects shown on residential.html. Add a new project to create a new gallery section on the page."
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.location}}"
+            fields:
+              - { label: "Project Title", name: "title", widget: "string", hint: "e.g. Rajeev Residence" }
+              - { label: "Location", name: "location", widget: "string", hint: "e.g. Dinanagar, Punjab" }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                summary: "{{fields.photo}}"
+                field: { label: "Photo", name: "photo", widget: "image" }
+
+  - name: "commercial"
+    label: "Commercial Portfolio"
+    files:
+      - name: "commercial"
+        label: "Commercial Projects"
+        file: "data/commercial.json"
+        description: "Projects shown on commercial.html. Add a new project to create a new gallery section on the page."
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.location}}"
+            fields:
+              - { label: "Project Title", name: "title", widget: "string", hint: "e.g. Showroom" }
+              - { label: "Location", name: "location", widget: "string", hint: "e.g. Delhi" }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                summary: "{{fields.photo}}"
+                field: { label: "Photo", name: "photo", widget: "image" }
+
+  - name: "consultation"
+    label: "Consultation Portfolio"
+    files:
+      - name: "consultation"
+        label: "Consultation Categories"
+        file: "data/consultation.json"
+        description: "Photo categories shown on consultation.html (Onsite / Online)."
+        fields:
+          - label: "Categories"
+            name: "projects"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.location}}"
+            fields:
+              - { label: "Category Title", name: "title", widget: "string", hint: "e.g. Onsite Consultations" }
+              - { label: "Subtitle", name: "location", widget: "string", hint: "e.g. In-person site visits" }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                summary: "{{fields.photo}}"
+                field: { label: "Photo", name: "photo", widget: "image" }

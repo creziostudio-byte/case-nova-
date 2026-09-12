@@ -1,0 +1,108 @@
+{
+  "projects": [
+    {
+      "title": "Rajeev Residence",
+      "location": "Dinanagar, Punjab",
+      "photos": [
+        "images/residential/rajeev-dinanagar/bathroom-1.webp",
+        "images/residential/rajeev-dinanagar/bathroom-2.webp",
+        "images/residential/rajeev-dinanagar/bed-back-4.webp",
+        "images/residential/rajeev-dinanagar/bed-back-8.webp",
+        "images/residential/rajeev-dinanagar/bedroom-1.webp",
+        "images/residential/rajeev-dinanagar/bedroom-3.webp",
+        "images/residential/rajeev-dinanagar/bedroom-6.webp",
+        "images/residential/rajeev-dinanagar/bedroom-7.webp",
+        "images/residential/rajeev-dinanagar/bedroom-dressing.webp",
+        "images/residential/rajeev-dinanagar/bedrroom-dressing.webp",
+        "images/residential/rajeev-dinanagar/drawing-2.webp",
+        "images/residential/rajeev-dinanagar/drawing.webp",
+        "images/residential/rajeev-dinanagar/entrance-2.webp",
+        "images/residential/rajeev-dinanagar/entrance-foyer.webp",
+        "images/residential/rajeev-dinanagar/entrance.webp",
+        "images/residential/rajeev-dinanagar/living-wall-without-pattern.webp",
+        "images/residential/rajeev-dinanagar/living-wall.webp",
+        "images/residential/rajeev-dinanagar/lobby-1.webp",
+        "images/residential/rajeev-dinanagar/lobby-2.webp",
+        "images/residential/rajeev-dinanagar/lobby-wall-2.webp",
+        "images/residential/rajeev-dinanagar/lobby.webp",
+        "images/residential/rajeev-dinanagar/mandir.webp",
+        "images/residential/rajeev-dinanagar/mbr-wardrobe-wall.webp",
+        "images/residential/rajeev-dinanagar/outer-porch.webp",
+        "images/residential/rajeev-dinanagar/pooja-1.webp",
+        "images/residential/rajeev-dinanagar/pooja-2.webp",
+        "images/residential/rajeev-dinanagar/porch.webp",
+        "images/residential/rajeev-dinanagar/stairs.webp",
+        "images/residential/rajeev-dinanagar/terrace-1.webp",
+        "images/residential/rajeev-dinanagar/tv-2.webp",
+        "images/residential/rajeev-dinanagar/tv-8.webp",
+        "images/residential/rajeev-dinanagar/upper-lobby-1.webp",
+        "images/residential/rajeev-dinanagar/upper-lobby-2.webp",
+        "images/residential/rajeev-dinanagar/wardrobe-5.webp"
+      ]
+    },
+    {
+      "title": "Irfan Residence",
+      "location": "Dharwad, Karnataka",
+      "photos": [
+        "images/residential/irfan-dharwad/bed-back-3.webp",
+        "images/residential/irfan-dharwad/bed-back-side-view.webp",
+        "images/residential/irfan-dharwad/bed-back.webp",
+        "images/residential/irfan-dharwad/bedroom-view.webp",
+        "images/residential/irfan-dharwad/ceiling-2.webp",
+        "images/residential/irfan-dharwad/ceiling-3.webp",
+        "images/residential/irfan-dharwad/ceiling-d.webp",
+        "images/residential/irfan-dharwad/ceiling-design.webp",
+        "images/residential/irfan-dharwad/daughter-bedroom-1.webp",
+        "images/residential/irfan-dharwad/db-2.webp",
+        "images/residential/irfan-dharwad/db-4.webp",
+        "images/residential/irfan-dharwad/db-5.webp",
+        "images/residential/irfan-dharwad/db-6.webp",
+        "images/residential/irfan-dharwad/db-7.webp",
+        "images/residential/irfan-dharwad/db-8.webp",
+        "images/residential/irfan-dharwad/db-9.webp",
+        "images/residential/irfan-dharwad/db3.webp",
+        "images/residential/irfan-dharwad/diagonal.webp",
+        "images/residential/irfan-dharwad/k-1.webp",
+        "images/residential/irfan-dharwad/k-2.webp",
+        "images/residential/irfan-dharwad/k-3.webp",
+        "images/residential/irfan-dharwad/k-4.webp",
+        "images/residential/irfan-dharwad/k-5.webp",
+        "images/residential/irfan-dharwad/k-6.webp",
+        "images/residential/irfan-dharwad/k-7.webp",
+        "images/residential/irfan-dharwad/k-8.webp",
+        "images/residential/irfan-dharwad/living-22.webp",
+        "images/residential/irfan-dharwad/living-room.webp",
+        "images/residential/irfan-dharwad/living.webp",
+        "images/residential/irfan-dharwad/sofa-diagonal.webp",
+        "images/residential/irfan-dharwad/sofa-wall-2.webp",
+        "images/residential/irfan-dharwad/sofa-wall.webp",
+        "images/residential/irfan-dharwad/study-area.webp",
+        "images/residential/irfan-dharwad/study-diagonal.webp",
+        "images/residential/irfan-dharwad/study.webp",
+        "images/residential/irfan-dharwad/tv-unit-1.webp",
+        "images/residential/irfan-dharwad/tv-unit.webp",
+        "images/residential/irfan-dharwad/wardrobe-scene.webp",
+        "images/residential/irfan-dharwad/wardrobe-scne-2.webp",
+        "images/residential/irfan-dharwad/wardrobe-view.webp",
+        "images/residential/irfan-dharwad/wardrobe.webp"
+      ]
+    },
+    {
+      "title": "Pakhi Gujral Residence",
+      "location": "Gurgaon",
+      "photos": [
+        "images/residential/pakhi-gujral/bed-1.webp",
+        "images/residential/pakhi-gujral/mandir-2.webp",
+        "images/residential/pakhi-gujral/mandir.webp",
+        "images/residential/pakhi-gujral/tv-unit.webp"
+      ]
+    },
+    {
+      "title": "Bhola Residency",
+      "location": "Exterior Elevation",
+      "photos": [
+        "images/residential/elevation/final.webp"
+      ]
+    }
+  ]
+}

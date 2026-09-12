@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residential Interior Design Portfolio — Case Nova</title>
+<meta name="description" content="Explore full residential interior design projects by Case Nova — homes, apartments and villas designed by Vishakha Bhola across India and beyond.">
+<meta name="keywords" content="Case Nova, interior design, residential interior design, Vishakha Bhola">
+<meta name="author" content="Vishakha Bhola, Case Nova">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="canonical" href="https://casenovastudio.com/residential.html">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="apple-touch-icon" href="images/logo.webp">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Case Nova">
+<meta property="og:url" content="https://casenovastudio.com/residential.html">
+<meta property="og:title" content="Residential — Case Nova">
+<meta property="og:description" content="Explore full residential interior design projects by Case Nova — homes, apartments and villas designed by Vishakha Bhola across India and beyond.">
+<meta property="og:image" content="https://casenovastudio.com/images/og-residential.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Residential — Case Nova">
+<meta name="twitter:description" content="Explore full residential interior design projects by Case Nova — homes, apartments and villas designed by Vishakha Bhola across India and beyond.">
+<meta name="twitter:image" content="https://casenovastudio.com/images/og-residential.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Netlify Identity — lets invite/password-reset email links open the login
+     modal directly from any page, instead of only working on /admin/ -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+<style>
+/* ============ RESET & BASE ============ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+body {
+  font-family: 'Raleway', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-weight: 300;
+}
+:root {
+  --paper: #ffffff;
+  --paper-muted: rgba(255,255,255,0.62);
+  --on-gold: #0a0a0a;
+  --border-fixed: rgba(201, 168, 76, 0.25);
+  --bg: #000000;
+  --bg-soft: #0d0d0d;
+  --gold: #c9a84c;
+  --gold-light: #e0c275;
+  --gold-dark: #8a7332;
+  --white: #ffffff;
+  --grey: #b5b5b5;
+  --border: rgba(201, 168, 76, 0.2);
+  --navbar-bg: rgba(0, 0, 0, 0.35);
+  --navbar-bg-scrolled: rgba(0, 0, 0, 0.96);
+}
+h1, h2, h3, h4, h5 { font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: 0.5px; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+/* ============ SECTION HEADER (shared) ============ */
+.section { padding: 120px 0; position: relative; }
+.section-title {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #c9a84c 0%, #f5e6a8 25%, #c9a84c 50%, #f5e6a8 75%, #c9a84c 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+.section-title-wrap { text-align: center; margin-bottom: 70px; }
+.section-subtitle {
+  display: block;
+  color: var(--grey);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+.section-title-wrap::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 24px auto 0;
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  padding: 22px 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(8px);
+}
+.navbar.scrolled {
+  background: var(--navbar-bg-scrolled);
+  padding: 14px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo span { color: var(--gold); font-style: italic; }
+.logo-img { height: 50px; width: auto; display: block; border-radius: 50%; }
+.logo-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 1.5px;
+}
+.logo-name span { color: var(--gold); font-style: italic; }
+@keyframes logoSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.nav-links { display: flex; gap: 38px; list-style: none; align-items: center; }
+.nav-links a {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; left: 0;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--gold); }
+.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+.btn-quote {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 10px 24px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-quote::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: var(--gold);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+.btn-quote:hover { color: var(--on-gold); }
+.btn-quote:hover::before { left: 0; }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+.hamburger span { width: 26px; height: 2px; background: var(--gold); transition: all 0.3s; }
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.btn-gold {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--on-gold);
+  padding: 16px 42px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: var(--bg);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+.btn-gold:hover { color: var(--gold); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(201, 168, 76, 0.3); }
+.btn-gold:hover::before { left: 0; }
+
+/* ============ PAGE HERO ============ */
+.page-hero {
+  position: relative;
+  padding: 170px 0 90px;
+  overflow: hidden;
+}
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--grey);
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.breadcrumb a { transition: color 0.3s; }
+.breadcrumb a:hover { color: var(--gold); }
+.breadcrumb .sep { color: var(--gold); }
+.portfolio-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+.portfolio-switch-link {
+  padding: 9px 20px;
+  border: 1px solid var(--border);
+  color: var(--grey);
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.portfolio-switch-link:hover { border-color: var(--gold); color: var(--gold); }
+.portfolio-switch-link.active { border-color: var(--gold); background: rgba(201, 168, 76, 0.12); color: var(--gold); }
+.portfolio-switch-link.is-disabled { opacity: 0.4; pointer-events: none; }
+.page-hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--grey);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.page-hero-tag::before { content: ''; width: 30px; height: 1px; background: var(--gold); display: inline-block; }
+.page-hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  line-height: 1.05;
+  font-weight: 400;
+  color: var(--white);
+  max-width: 780px;
+}
+.page-hero h1 em { color: var(--gold); font-style: italic; }
+.page-hero-desc {
+  color: var(--grey);
+  max-width: 560px;
+  margin-top: 22px;
+  font-size: 1.02rem;
+}
+
+/* ============ PROJECT JUMP NAV ============ */
+.project-jump {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-soft);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+.project-jump-inner {
+  display: flex;
+  gap: 8px;
+  padding: 16px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.project-jump-inner::-webkit-scrollbar { display: none; }
+.project-jump-link {
+  flex-shrink: 0;
+  padding: 9px 20px;
+  border: 1px solid var(--border);
+  color: var(--grey);
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.project-jump-link:hover, .project-jump-link.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+/* ============ PROJECT SECTIONS ============ */
+.project-section { padding: 100px 0; }
+.project-section:nth-child(even) { background: var(--bg-soft); }
+.project-header { margin-bottom: 56px; }
+.project-num {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+.project-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 32px;
+  margin-bottom: 8px;
+}
+.project-header h2 {
+  font-size: clamp(2rem, 3.6vw, 3.1rem);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.project-location {
+  color: var(--gold-light);
+  font-size: 0.82rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.project-desc {
+  color: var(--grey);
+  max-width: 480px;
+  font-size: 0.98rem;
+  text-align: right;
+}
+@media (max-width: 768px) { .project-desc { text-align: left; max-width: 100%; } }
+.project-count {
+  color: var(--grey);
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+.project-count span { color: var(--gold); }
+
+/* ============ PHOTO GRID (responsive uniform grid) ============ */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: none;
+  padding: 0;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transition: border-color 0.4s ease;
+}
+.photo-item:hover { border-color: var(--gold); }
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease, filter 0.5s ease;
+}
+.photo-item:hover img { transform: scale(1.06); }
+.photo-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 35%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.photo-item:hover::after { opacity: 1; }
+.photo-item .zoom-icon {
+  position: absolute;
+  bottom: 14px; right: 14px;
+  width: 34px; height: 34px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.4s ease;
+  background: rgba(0,0,0,0.5);
+}
+.photo-item:hover .zoom-icon { opacity: 1; transform: translateY(0); }
+.photo-item .zoom-icon svg { width: 15px; height: 15px; }
+
+/* Mobile (phones): 3 across */
+@media (min-width: 420px) { .photo-grid { gap: 8px; } }
+/* Tablet (pad): more breathing room, still 3 across */
+@media (min-width: 640px) { .photo-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; } }
+/* Small laptop */
+@media (min-width: 900px) { .photo-grid { grid-template-columns: repeat(4, 1fr); gap: 16px; } }
+/* Large laptop / desktop */
+@media (min-width: 1280px) { .photo-grid { grid-template-columns: repeat(5, 1fr); gap: 18px; } }
+
+
+/* ============ LIGHTBOX ============ */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.96);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.lightbox.open { display: flex; }
+.lightbox-img-wrap { max-width: 1100px; max-height: 86vh; position: relative; }
+.lightbox img { max-width: 100%; max-height: 86vh; object-fit: contain; margin: 0 auto; border: 1px solid var(--border); }
+.lightbox-close, .lightbox-prev, .lightbox-next {
+  position: fixed;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--gold);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2001;
+}
+.lightbox-close { top: 26px; right: 32px; width: 44px; height: 44px; border-radius: 50%; }
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { border-color: var(--gold); background: rgba(201,168,76,0.1); }
+.lightbox-prev, .lightbox-next { top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border-radius: 50%; }
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+.lightbox-close svg, .lightbox-prev svg, .lightbox-next svg { width: 18px; height: 18px; }
+.lightbox-counter {
+  position: fixed;
+  bottom: 30px; left: 50%;
+  transform: translateX(-50%);
+  color: var(--grey);
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 2001;
+}
+.lightbox-counter span { color: var(--gold); }
+@media (max-width: 640px) {
+  .lightbox { padding: 16px; }
+  .lightbox-prev, .lightbox-next { width: 42px; height: 42px; }
+  .lightbox-prev { left: 8px; } .lightbox-next { right: 8px; }
+  .lightbox-close { top: 14px; right: 14px; }
+}
+
+/* ============ CTA STRIP ============ */
+.residential-cta {
+  text-align: center;
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+}
+.residential-cta h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); margin-bottom: 18px; }
+.residential-cta h2 em { color: var(--gold); font-style: italic; font-weight: 400; }
+.residential-cta p { color: var(--grey); max-width: 500px; margin: 0 auto 34px; }
+
+/* WhatsApp floating */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 999;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  animation: pulse 2s infinite;
+  transition: transform 0.3s;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
+.whatsapp-float svg { width: 30px; height: 30px; }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* ============ FOOTER ============ */
+.footer { background: #000000; padding: 80px 0 30px; border-top: 1px solid var(--border-fixed); }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.footer-col h4 {
+  font-family: 'Raleway', sans-serif;
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+.footer-col p, .footer-col li { color: var(--paper-muted); font-size: 0.9rem; margin-bottom: 12px; font-weight: 300; }
+.footer-col ul { list-style: none; }
+.footer-col li a { transition: color 0.3s, padding-left 0.3s; display: inline-block; }
+.footer-col li a:hover { color: var(--gold-light); padding-left: 6px; }
+.footer-logo-row { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: var(--paper);
+  letter-spacing: 2px;
+}
+.footer-logo span { color: var(--gold-light); font-style: italic; }
+.footer-logo-img { height: 60px; width: auto; border-radius: 50%; animation: logoSpin 8s linear infinite; flex-shrink: 0; }
+.social-icons { display: flex; gap: 14px; margin-top: 20px; }
+.social-icons a {
+  width: 40px; height: 40px;
+  border: 1px solid var(--border-fixed);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper-muted);
+  transition: all 0.3s;
+}
+.social-icons a:hover { background: var(--gold); border-color: var(--gold); color: var(--on-gold); transform: translateY(-3px); }
+.social-icons svg { width: 16px; height: 16px; }
+.footer-bottom {
+  border-top: 1px solid var(--border-fixed);
+  padding-top: 26px;
+  text-align: center;
+  color: var(--paper-muted);
+  font-size: 0.85rem;
+}
+.footer-bottom .gold { color: var(--gold-light); }
+
+/* ============ SCROLL ANIMATIONS ============ */
+.fade-in { opacity: 0; transform: translateY(40px); transition: all 1s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 968px) {
+  .section { padding: 80px 0; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: var(--bg);
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.4s ease;
+    border-left: 1px solid var(--border);
+  }
+  .nav-links.open { right: 0; }
+  .hamburger { display: flex; }
+  .btn-quote { display: none; }
+  .container { padding: 0 20px; }
+  .project-section { padding: 70px 0; }
+}
+@media (max-width: 580px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .whatsapp-float { width: 52px; height: 52px; bottom: 20px; right: 20px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://casenovastudio.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://casenovastudio.com/#portfolio" },
+    { "@type": "ListItem", "position": 3, "name": "Residential", "item": "https://casenovastudio.com/residential.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html#home" class="logo"><img src="images/logo.webp" alt="Case Nova" class="logo-img"><span class="logo-name">Case<span>Nova</span></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#portfolio" class="active">Portfolio</a></li>
+      <li><a href="index.html#testimonials">Reviews</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScAzfquJql_DEG2XtnD_9iLUrtLNk5dJh2pzVzGWFhEzTC_tw/viewform" target="_blank" rel="noopener noreferrer" class="btn-quote">Get a Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html#home">Home</a><span class="sep">/</span><a href="index.html#portfolio">Portfolio</a><span class="sep">/</span><span>Residential</span>
+    </div>
+    <div class="portfolio-switch">
+      <a href="residential.html" class="portfolio-switch-link active">Residential</a>
+      <a href="commercial.html" class="portfolio-switch-link">Commercial</a>
+      <a href="consultation.html" class="portfolio-switch-link">Consultation</a>
+      <span class="portfolio-switch-link is-disabled">Fast-Track — Coming Soon</span>
+    </div>
+    <span class="page-hero-tag">Portfolio · Residential</span>
+    <h1>Homes Designed with <em>Purpose.</em></h1>
+    <p class="page-hero-desc">A closer look at full residential projects by Case Nova — from layout and lighting to every wardrobe, wall and detail in between.</p>
+  </div>
+</section>
+
+<!-- ============ PROJECT JUMP NAV ============ -->
+<div class="project-jump">
+  <div class="container project-jump-inner" id="jumpNavContainer"></div>
+</div>
+
+<div id="projectsContainer"></div>
+
+<!-- ============ CTA ============ -->
+<section class="residential-cta">
+  <div class="container fade-in">
+    <h2>Have a home in mind? Let's design <em>your chapter.</em></h2>
+    <p>Tell us about your space and where you'd like it to go — we'll take it from there.</p>
+    <a href="index.html#contact" class="btn-gold">Get In Touch</a>
+  </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918800897401?text=Hi%20Vishakha%20%F0%9F%91%8B%0AI%27m%20%5BYour%20Name%5D%20from%20%5BCity/Location%5D.%0AMy%20site%20location%20is%20%5BSite%20Location%5D.%0AI%27m%20looking%20for%20%5BService%20Required%5D.%0A%0AI%27d%20love%20to%20discuss%20my%20requirements%20further.%20Can%20I%20book%20a%20call%20with%20you%3F%0AThank%20you%21" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <div class="lightbox-img-wrap"><img id="lightboxImg" src="" alt=""></div>
+  <button class="lightbox-next" id="lightboxNext" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="lightbox-counter"><span id="lightboxCurrent">1</span> / <span id="lightboxTotal">1</span></div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo-row">
+          <img src="images/logo.webp" alt="Case Nova" class="footer-logo-img">
+          <span class="footer-logo">Case<span>Nova</span></span>
+        </div>
+        <p>We design the world, one space at a time — global interior design by Vishakha Bhola.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/casenovabyvishakha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg></a>
+          <a href="https://www.youtube.com/@casenovabyvishakha" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5v5l5-2.5z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.linkedin.com/in/case-nova-806495377" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#testimonials">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Interior Design &amp; Planning</a></li>
+          <li><a href="index.html#services">Online &amp; Onsite Consultation</a></li>
+          <li><a href="index.html#services">Site &amp; Execution Support</a></li>
+          <li><a href="index.html#services">Fast-Track Designing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li class="js-hosted-by">Hosted by Vishakha Bhola</li>
+          <li><a href="tel:+918800897401" class="js-phone-link" data-show-phone="true">+91 88008 97401</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.casenovastudio.co@gmail.com" target="_blank" rel="noopener noreferrer" class="js-email-link" data-show-email="true">hello.casenovastudio.co@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 <span class="gold">Case Nova</span> · All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============ NAVBAR SCROLL ============ */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* ============ MOBILE MENU ============ */
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+
+/* ============ FADE IN ON SCROLL ============ */
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -60px 0px' };
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+/* ============ PROJECTS + GALLERIES + LIGHTBOX (from CMS-editable data/residential.json) ============ */
+const galleries = {};
+let jumpLinks = [];
+let jumpSections = [];
+
+function slugify(str) {
+  return str.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+function toRoman(num) {
+  const romans = ['I','II','III','IV','V','VI','VII','VIII','IX','X'];
+  return (romans[num - 1] || num) + '.';
+}
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCurrent = document.getElementById('lightboxCurrent');
+const lightboxTotal = document.getElementById('lightboxTotal');
+let activeGallery = [];
+let activeIndex = 0;
+
+function openLightbox(projectKey, index) {
+  activeGallery = galleries[projectKey];
+  activeIndex = index;
+  updateLightboxImg();
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function updateLightboxImg() {
+  lightboxImg.src = activeGallery[activeIndex];
+  lightboxCurrent.textContent = activeIndex + 1;
+  lightboxTotal.textContent = activeGallery.length;
+}
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+function showNext() { activeIndex = (activeIndex + 1) % activeGallery.length; updateLightboxImg(); }
+function showPrev() { activeIndex = (activeIndex - 1 + activeGallery.length) % activeGallery.length; updateLightboxImg(); }
+
+// Event delegation — works even for buttons added after page load
+document.addEventListener('click', (e) => {
+  const item = e.target.closest('.photo-item');
+  if (item) openLightbox(item.dataset.project, parseInt(item.dataset.index, 10));
+});
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lightboxNext').addEventListener('click', showNext);
+document.getElementById('lightboxPrev').addEventListener('click', showPrev);
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') showNext();
+  if (e.key === 'ArrowLeft') showPrev();
+});
+
+async function loadProjects() {
+  const jumpContainer = document.getElementById('jumpNavContainer');
+  const projectsContainer = document.getElementById('projectsContainer');
+  try {
+    const res = await fetch('data/residential.json');
+    const data = await res.json();
+
+    data.projects.forEach((project, i) => {
+      const slug = slugify(project.title);
+      galleries[slug] = project.photos;
+
+      // Jump nav link
+      const link = document.createElement('a');
+      link.href = '#' + slug;
+      link.className = 'project-jump-link';
+      link.textContent = `${project.title} — ${project.location}`;
+      jumpContainer.appendChild(link);
+
+      // Project section
+      const section = document.createElement('section');
+      section.className = 'project-section';
+      section.id = slug;
+      const photoButtons = project.photos.map((src, pi) => `
+          <button class="photo-item" data-project="${slug}" data-index="${pi}">
+            <img src="${src}" alt="${project.title}" loading="lazy">
+            <span class="zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg></span>
+          </button>`).join('');
+      section.innerHTML = `
+  <div class="container">
+    <div class="project-header fade-in">
+      <span class="project-num">${toRoman(i + 1)}</span>
+      <div class="project-header-top">
+        <div>
+          <h2>${project.title}</h2>
+          <span class="project-location">${project.location}</span>
+        </div>
+      </div>
+    </div>
+    <div class="photo-grid">${photoButtons}
+    </div>
+  </div>`;
+      projectsContainer.appendChild(section);
+      observer.observe(section.querySelector('.fade-in'));
+    });
+
+    // Jump-nav active-state scroll tracking (set up now that links/sections exist)
+    jumpLinks = document.querySelectorAll('.project-jump-link');
+    jumpSections = Array.from(jumpLinks).map(l => document.querySelector(l.getAttribute('href')));
+    window.addEventListener('scroll', () => {
+      let current = 0;
+      jumpSections.forEach((sec, i) => {
+        if (sec && window.scrollY >= sec.offsetTop - 160) current = i;
+      });
+      jumpLinks.forEach((l, i) => l.classList.toggle('active', i === current));
+    });
+  } catch (err) {
+    console.error('Could not load projects:', err);
+  }
+}
+loadProjects();
+</script>
+
+<script>
+/* ============ SITE CONTENT (hero + contact, from CMS-editable data/site.json) ============ */
+(async function loadSiteContent() {
+  try {
+    const res = await fetch('data/site.json');
+    const data = await res.json();
+
+    // Hero (only present on index.html)
+    const headingEl = document.getElementById('heroHeadline');
+    if (headingEl && data.hero) {
+      headingEl.innerHTML = `${data.hero.heading_line1}<br>of <em>${data.hero.heading_emphasis}</em>`;
+    }
+    const bylineEl = document.getElementById('heroByline');
+    if (bylineEl && data.hero) bylineEl.textContent = data.hero.byline;
+    const descEl = document.getElementById('heroDesc');
+    if (descEl && data.hero) descEl.innerHTML = data.hero.quote;
+
+    // Contact — email links (Gmail compose href + optionally visible text)
+    if (data.contact) {
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(data.contact.email)}`;
+      document.querySelectorAll('.js-email-link').forEach(el => {
+        el.href = gmailUrl;
+        if (el.dataset.showEmail === 'true') el.textContent = data.contact.email;
+      });
+
+      document.querySelectorAll('.js-phone-link').forEach(el => {
+        el.href = 'tel:+' + data.contact.phone_e164;
+        if (el.dataset.showPhone === 'true') el.textContent = data.contact.phone_display;
+      });
+
+      document.querySelectorAll('.js-hosted-by').forEach(el => {
+        el.textContent = 'Hosted by ' + data.contact.hosted_by;
+      });
+
+      const waLink = document.querySelector('.whatsapp-float');
+      if (waLink) {
+        const [, query] = waLink.href.split('?text=');
+        waLink.href = `https://wa.me/${data.contact.phone_e164}?text=${query || ''}`;
+      }
+    }
+  } catch (err) {
+    console.error('Could not load site content:', err);
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "heading_line1": "A New Chapter",
+    "heading_emphasis": "Home.",
+    "byline": "By Vishakha Bhola · India & Beyond",
+    "quote": "\"We all imagine a <span class=\"gold\">home that truly feels like us</span>. At Case Nova, we transform that dream into a space that hugs you back — crafting interiors that are <span class=\"gold\">calm, considered, and deeply personal</span>, shaped by <span class=\"gold\">purpose, passion, and precision</span>.\""
+  },
+  "contact": {
+    "email": "hello.casenovastudio.co@gmail.com",
+    "phone_display": "+91 88008 97401",
+    "phone_e164": "918800897401",
+    "hosted_by": "Vishakha Bhola"
+  }
+}

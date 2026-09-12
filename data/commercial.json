@@ -1,0 +1,47 @@
+{
+  "projects": [
+    {
+      "title": "Showroom",
+      "location": "Delhi",
+      "photos": [
+        "images/commercial/showroom-delhi/1-view-2.webp",
+        "images/commercial/showroom-delhi/1.webp",
+        "images/commercial/showroom-delhi/10.webp",
+        "images/commercial/showroom-delhi/11.webp",
+        "images/commercial/showroom-delhi/12.webp",
+        "images/commercial/showroom-delhi/2.webp",
+        "images/commercial/showroom-delhi/3.webp",
+        "images/commercial/showroom-delhi/4.webp",
+        "images/commercial/showroom-delhi/5.webp",
+        "images/commercial/showroom-delhi/6.webp",
+        "images/commercial/showroom-delhi/7.webp",
+        "images/commercial/showroom-delhi/8.webp",
+        "images/commercial/showroom-delhi/9.webp"
+      ]
+    },
+    {
+      "title": "Cafe",
+      "location": "Ludhiana",
+      "photos": [
+        "images/commercial/cafe-ludhiana/elevation-view-1.webp",
+        "images/commercial/cafe-ludhiana/elevation-view-2.webp",
+        "images/commercial/cafe-ludhiana/side-1.webp",
+        "images/commercial/cafe-ludhiana/side-3.webp",
+        "images/commercial/cafe-ludhiana/side-4-2.webp",
+        "images/commercial/cafe-ludhiana/side-4.webp"
+      ]
+    },
+    {
+      "title": "Custom Furniture Collection",
+      "location": "Furniture Design",
+      "photos": [
+        "images/commercial/furniture/view-1-modified.webp",
+        "images/commercial/furniture/view-1.webp",
+        "images/commercial/furniture/view-2-modified.webp",
+        "images/commercial/furniture/view-2.webp",
+        "images/commercial/furniture/view-3-modified.webp",
+        "images/commercial/furniture/view-3.webp"
+      ]
+    }
+  ]
+}

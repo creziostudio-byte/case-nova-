@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Nova — Interior Design Studio | Residential &amp; Commercial Design in India</title>
+<meta name="description" content="Case Nova is a global interior design studio led by Vishakha Bhola, offering end-to-end residential and commercial interior design, online and onsite consultations, across India and beyond.">
+<meta name="keywords" content="interior design studio, residential interior design, commercial interior design, home interior designer India, Case Nova, Vishakha Bhola, interior design consultation">
+<meta name="author" content="Vishakha Bhola, Case Nova">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="canonical" href="https://casenovastudio.com/">
+<link rel="icon" type="image/webp" href="images/logo.webp">
+<link rel="apple-touch-icon" href="images/logo.webp">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Case Nova">
+<meta property="og:url" content="https://casenovastudio.com/">
+<meta property="og:title" content="Case Nova — A New Chapter of Home">
+<meta property="og:description" content="Global interior design studio led by Vishakha Bhola — residential and commercial design, online and onsite consultations, across India and beyond.">
+<meta property="og:image" content="https://casenovastudio.com/images/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Case Nova — A New Chapter of Home">
+<meta name="twitter:description" content="Global interior design studio led by Vishakha Bhola — residential and commercial design, online and onsite consultations, across India and beyond.">
+<meta name="twitter:image" content="https://casenovastudio.com/images/og-home.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Case Nova",
+  "image": "https://casenovastudio.com/images/og-home.jpg",
+  "url": "https://casenovastudio.com/",
+  "telephone": "+918800897401",
+  "email": "hello.casenovastudio.co@gmail.com",
+  "description": "Case Nova is a global interior design studio offering end-to-end residential and commercial interior design, online and onsite consultations, and fast-track design services.",
+  "areaServed": "IN",
+  "founder": [
+    { "@type": "Person", "name": "Vishakha Bhola", "jobTitle": "Interior Design Head" },
+    { "@type": "Person", "name": "Suraj Shingate", "jobTitle": "Social Media Head" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "8"
+  }
+}
+</script>
+<!-- Netlify Identity — lets invite/password-reset email links open the login
+     modal directly from any page, instead of only working on /admin/ -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+<style>
+/* ============ RESET & BASE ============ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; overflow-x: hidden; width: 100%; }
+body {
+  font-family: 'Raleway', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-weight: 300;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+:root {
+  /* fixed — always-dark surfaces regardless of theme (footer, hero overlay, gold-fill text) */
+  --paper: #ffffff;
+  --paper-muted: rgba(255,255,255,0.62);
+  --on-gold: #0a0a0a;
+  --border-fixed: rgba(201, 168, 76, 0.25);
+
+  /* themed — flip between night (default) and day */
+  --bg: #000000;
+  --bg-soft: #0d0d0d;
+  --gold: #c9a84c;
+  --gold-light: #e0c275;
+  --gold-dark: #8a7332;
+  --white: #ffffff;
+  --grey: #b5b5b5;
+  --border: rgba(201, 168, 76, 0.2);
+  --navbar-bg: rgba(0, 0, 0, 0.35);
+  --navbar-bg-scrolled: rgba(0, 0, 0, 0.96);
+}
+html[data-theme="light"] {
+  --bg: #fbf8f3;
+  --bg-soft: #f2ebe0;
+  --white: #1a1815;
+  --grey: #6b6155;
+  --border: rgba(26, 24, 21, 0.12);
+  --navbar-bg: rgba(251, 248, 243, 0.75);
+  --navbar-bg-scrolled: rgba(251, 248, 243, 0.95);
+  --gold: #a9822f;
+  --gold-light: #8a6a24;
+}h1, h2, h3, h4, h5 { font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: 0.5px; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+/* ============ SECTION HEADER (shared) ============ */
+.section { padding: 120px 0; position: relative; }
+.section-title {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #c9a84c 0%, #f5e6a8 25%, #c9a84c 50%, #f5e6a8 75%, #c9a84c 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+html[data-theme="light"] .section-title {
+  background: linear-gradient(90deg, #a9822f 0%, #c9a84c 25%, #8a6a24 50%, #c9a84c 75%, #a9822f 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-title-wrap { text-align: center; margin-bottom: 70px; }
+.section-subtitle {
+  display: block;
+  color: var(--grey);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+.section-title-wrap::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 24px auto 0;
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  padding: 22px 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(8px);
+}
+.navbar.scrolled {
+  background: var(--navbar-bg-scrolled);
+  padding: 14px 0;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.theme-toggle {
+  width: 40px; height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: transparent;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  flex-shrink: 0;
+}
+.theme-toggle:hover { border-color: var(--gold); }
+.theme-toggle svg { width: 17px; height: 17px; stroke: var(--gold); }
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+html[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo span { color: var(--gold); font-style: italic; }
+.logo-img { height: 50px; width: auto; display: block; border-radius: 50%; }
+.logo-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 1.5px;
+}
+.logo-name span { color: var(--gold); font-style: italic; }
+@keyframes logoSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.nav-links { display: flex; gap: 38px; list-style: none; align-items: center; }
+.nav-links a {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; left: 0;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.4s ease;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.btn-quote {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 10px 24px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-quote::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: var(--gold);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+.btn-quote:hover { color: var(--on-gold); }
+.btn-quote:hover::before { left: 0; }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+.hamburger span { width: 26px; height: 2px; background: var(--gold); transition: all 0.3s; }
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ============ HERO ============ */
+.hero {
+  padding: 160px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--grey);
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.1s forwards;
+}
+.hero-tag::before { content: ''; width: 30px; height: 1px; background: var(--gold); display: inline-block; }
+.hero h1 {
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  line-height: 1.08;
+  font-weight: 400;
+  margin-bottom: 26px;
+  color: var(--white);
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.3s forwards;
+}
+.hero h1 em { color: var(--gold); font-style: italic; }
+.hero-byline {
+  color: var(--grey);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.5s forwards;
+}
+.hero-desc {
+  font-size: 1.05rem;
+  color: var(--grey);
+  max-width: 460px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.7s forwards;
+}
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 0.9s 0.9s forwards;
+}
+.btn-text-link {
+  color: var(--white);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+  transition: color 0.3s, border-color 0.3s;
+}
+.btn-text-link:hover { color: var(--gold); border-color: var(--gold); }
+.hero-image {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInUp 1s 0.4s forwards;
+  height: 520px;
+  border: 2px solid var(--gold);
+  border-radius: 16px;
+}
+.hero-image img { width: 100%; height: 520px; object-fit: cover; }
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: heroFadeMulti 28s ease-in-out infinite;
+}
+.hero-slide-1 { animation-name: heroFadeFirst; animation-delay: 0s; }
+.hero-slide-2 { animation-delay: 4s; }
+.hero-slide-3 { animation-delay: 8s; }
+.hero-slide-4 { animation-delay: 12s; }
+.hero-slide-5 { animation-delay: 16s; }
+.hero-slide-6 { animation-delay: 20s; }
+.hero-slide-7 { animation-delay: 24s; }
+@keyframes heroFadeMulti {
+  0% { opacity: 0; }
+  6% { opacity: 1; }
+  14% { opacity: 1; }
+  20% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes heroFadeFirst {
+  0% { opacity: 1; }
+  14% { opacity: 1; }
+  20% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.hero-stats-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--border);
+  margin-top: 70px;
+}
+.hero-stat {
+  text-align: center;
+  padding: 34px 20px;
+  position: relative;
+}
+.hero-stat:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 20%;
+  height: 60%;
+  width: 1px;
+  background: var(--border);
+}
+.hero-stat-num {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 3.6vw, 3rem);
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.hero-stat-label {
+  display: block;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--grey);
+}
+.btn-gold {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--on-gold);
+  padding: 16px 42px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: var(--bg);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+.btn-gold:hover { color: var(--gold); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(201, 168, 76, 0.3); }
+.btn-gold:hover::before { left: 0; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ MARQUEE ============ */
+.marquee {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 22px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-track {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track span {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--white);
+  margin: 0 30px;
+}
+.marquee-track span.gold { color: var(--gold); }
+.gold { color: var(--gold); }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ============ ABOUT ============ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about-image {
+  position: relative;
+}
+.about-portrait-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.about-portrait {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+}
+.about-portrait::before {
+  content: '';
+  position: absolute;
+  top: 16px; left: 16px;
+  right: -16px; bottom: -16px;
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.about-portrait img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+  border-radius: 10px;
+}
+.about-portrait:hover img { transform: scale(1.05); }
+.about-portrait-tag {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0) 100%);
+  color: var(--paper);
+  padding: 40px 18px 18px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.about-portrait-tag strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.about-portrait-tag span {
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  color: var(--paper-muted);
+}
+.about-portrait-tag span:first-of-type { color: var(--gold-light); }
+.about-text .tag {
+  color: var(--gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+  display: block;
+}
+.about-text h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+.about-text h2 em { color: var(--gold); font-weight: 400; }
+.about-text p {
+  color: var(--grey);
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.about-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 36px;
+}
+.about-feature {
+  border-left: 2px solid var(--gold);
+  padding-left: 18px;
+}
+.about-feature h4 {
+  color: var(--gold);
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+.about-feature p { color: var(--grey); font-size: 0.85rem; margin: 0; }
+
+/* ============ SERVICES ============ */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.service-card {
+  background: var(--bg);
+  border: 1px solid transparent;
+  padding: 48px 28px;
+  text-align: center;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.service-card-placeholder {
+  border: 1px dashed var(--border);
+  opacity: 0.6;
+  cursor: default;
+}
+.service-card-placeholder:hover { transform: none; background: var(--bg); }
+.service-card-placeholder:hover::before { opacity: 0; transform: scale(0.9); }
+.service-card-placeholder:hover h3 { color: var(--white); }
+.service-card-placeholder:hover p { color: var(--grey); }
+.service-card-placeholder .service-icon { border-style: dashed; }
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--gold);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+.service-card:hover { transform: translateY(-10px); background: #181818; }
+.service-card:hover::before { opacity: 1; transform: scale(1); }
+.service-card:hover h3 { color: var(--paper); }
+.service-card:hover p { color: var(--paper-muted); }
+.service-icon {
+  width: 70px; height: 70px;
+  margin: 0 auto 24px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  transition: all 0.4s;
+}
+.service-card:hover .service-icon { background: var(--gold); color: var(--on-gold); transform: rotate(360deg); }
+.service-icon svg { width: 32px; height: 32px; }
+.service-card h3 { font-size: 1.6rem; margin-bottom: 14px; }
+.service-card p { color: var(--grey); font-size: 0.9rem; font-weight: 300; }
+
+/* ============ PORTFOLIO ============ */
+.portfolio-cats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+}
+.portfolio-cat-card {
+  padding: 56px 48px;
+  transition: background 0.4s ease;
+  position: relative;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.portfolio-cat-card:nth-child(2n) { border-right: none; }
+.portfolio-cat-card:nth-child(3), .portfolio-cat-card:nth-child(4) { border-bottom: none; }
+.portfolio-cat-card:hover { background: var(--bg-soft); }
+.portfolio-cat-num {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+.portfolio-cat-card h3 { font-size: 2rem; margin-bottom: 18px; font-weight: 400; }
+.portfolio-cat-card p { color: var(--grey); font-size: 0.98rem; margin-bottom: 32px; max-width: 380px; }
+.portfolio-cat-link {
+  display: inline-block;
+  color: var(--gold-light);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--gold-light);
+  padding-bottom: 4px;
+  transition: color 0.3s, border-color 0.3s;
+}
+.portfolio-cat-link:hover { color: var(--gold); border-color: var(--gold); }
+.portfolio-cat-link.is-disabled { cursor: default; opacity: 0.85; }
+.portfolio-cat-link.is-disabled:hover { color: var(--gold-light); border-color: var(--gold-light); }
+
+/* ============ TESTIMONIALS ============ */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.testimonial-card {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  padding: 40px 32px;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.testimonial-card::before {
+  content: '"';
+  font-family: 'Cormorant Garamond', serif;
+  position: absolute;
+  top: 10px;
+  left: 24px;
+  font-size: 6rem;
+  color: var(--gold);
+  opacity: 0.3;
+  line-height: 1;
+}
+.testimonial-card:hover { transform: translateY(-8px); border-color: var(--gold); }
+.testimonial-stars { color: var(--gold); margin-bottom: 18px; font-size: 0.95rem; letter-spacing: 3px; position: relative; z-index: 1; }
+.testimonial-text {
+  color: var(--grey);
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 26px;
+  position: relative;
+  z-index: 1;
+}
+.testimonial-author { display: flex; align-items: center; gap: 14px; }
+.author-avatar {
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--on-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.author-info h4 { font-family: 'Raleway', sans-serif; font-size: 0.95rem; color: var(--white); font-weight: 500; margin-bottom: 2px; }
+.author-info span { color: var(--gold); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; }
+
+/* ============ CONTACT ============ */
+.contact-simple { max-width: 680px; margin: 0 auto; text-align: center; }
+.contact-simple h3 { font-size: 2.2rem; margin-bottom: 16px; }
+.contact-simple h3 em { color: var(--gold); font-weight: 400; font-style: italic; }
+.contact-simple > p { color: var(--grey); margin-bottom: 36px; font-size: 1.05rem; }
+.contact-simple .btn-gold { opacity: 1; animation: none; margin-bottom: 56px; }
+.contact-cta-row { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 56px; }
+.contact-cta-row .btn-gold, .contact-cta-row .btn-outline { margin-bottom: 0; }
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold);
+  padding: 16px 42px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.btn-outline:hover { background: var(--gold); color: var(--on-gold); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(201, 168, 76, 0.3); }
+.contact-rows { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; }
+.contact-row-item h4 { font-family: 'Raleway', sans-serif; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.contact-row-item p { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--white); margin: 0; }
+.contact-row-item a { transition: color 0.3s; }
+.contact-row-item a:hover { color: var(--gold); }
+
+/* WhatsApp floating */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 999;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  animation: pulse 2s infinite;
+  transition: transform 0.3s;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
+.whatsapp-float svg { width: 30px; height: 30px; }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* ============ FOOTER ============ */
+.footer { background: #000000; padding: 80px 0 30px; border-top: 1px solid var(--border-fixed); }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.footer-col h4 {
+  font-family: 'Raleway', sans-serif;
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+.footer-col p, .footer-col li { color: var(--paper-muted); font-size: 0.9rem; margin-bottom: 12px; font-weight: 300; }
+.footer-col ul { list-style: none; }
+.footer-col li a { transition: color 0.3s, padding-left 0.3s; display: inline-block; }
+.footer-col li a:hover { color: var(--gold-light); padding-left: 6px; }
+.footer-logo-row { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: var(--paper);
+  letter-spacing: 2px;
+}
+.footer-logo span { color: var(--gold-light); font-style: italic; }
+.footer-logo-img { height: 60px; width: auto; border-radius: 50%; animation: logoSpin 8s linear infinite; flex-shrink: 0; }
+.social-icons { display: flex; gap: 14px; margin-top: 20px; }
+.social-icons a {
+  width: 40px; height: 40px;
+  border: 1px solid var(--border-fixed);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper-muted);
+  transition: all 0.3s;
+}
+.social-icons a:hover { background: var(--gold); border-color: var(--gold); color: var(--on-gold); transform: translateY(-3px); }
+.social-icons svg { width: 16px; height: 16px; }
+.footer-bottom {
+  border-top: 1px solid var(--border-fixed);
+  padding-top: 26px;
+  text-align: center;
+  color: var(--paper-muted);
+  font-size: 0.85rem;
+}
+.footer-bottom .gold { color: var(--gold-light); }
+
+/* ============ SCROLL ANIMATIONS ============ */
+.fade-in { opacity: 0; transform: translateY(40px); transition: all 1s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-left { opacity: 0; transform: translateX(-50px); transition: all 1s ease; }
+.fade-left.visible { opacity: 1; transform: translateX(0); }
+.fade-right { opacity: 0; transform: translateX(50px); transition: all 1s ease; }
+.fade-right.visible { opacity: 1; transform: translateX(0); }
+.slide-up { opacity: 0; transform: translateY(60px); transition: all 0.8s ease; }
+.slide-up.visible { opacity: 1; transform: translateY(0); }
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.15s; }
+.delay-2 { transition-delay: 0.3s; }
+.delay-3 { transition-delay: 0.45s; }
+.delay-4 { transition-delay: 0.6s; }
+.delay-5 { transition-delay: 0.75s; }
+.delay-6 { transition-delay: 0.9s; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 968px) {
+  .section { padding: 80px 0; }
+  .contact-cta-row { flex-direction: column; align-items: center; }
+  .contact-cta-row .btn-gold, .contact-cta-row .btn-outline { width: 100%; max-width: 320px; text-align: center; }
+  .hero { padding: 130px 0 0; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-image, .hero-image img { height: 340px; }
+  .about-grid { grid-template-columns: 1fr; gap: 50px; }
+  .about-portrait img { height: 380px; }
+  .services-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: var(--bg);
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.4s ease;
+    border-left: 1px solid var(--border);
+  }
+  .nav-links.open { right: 0; }
+  .hamburger { display: flex; }
+  .btn-quote { display: none; }
+  .marquee-track span { font-size: 1.3rem; margin: 0 18px; }
+  .container { padding: 0 20px; }
+  .contact-rows { gap: 36px; }
+}
+@media (max-width: 580px) {
+  .services-grid, .testimonials-grid, .footer-grid { grid-template-columns: 1fr; }
+  .portfolio-cats { grid-template-columns: 1fr; }
+  .portfolio-cat-card { border-right: none !important; border-bottom: 1px solid var(--border); }
+  .portfolio-cat-card:last-child { border-bottom: none; }
+  .portfolio-cat-card { padding: 40px 28px; }
+  .hero-stats-bar { grid-template-columns: 1fr; }
+  .hero-stat:not(:last-child)::after { display: none; }
+  .hero-stat:not(:last-child) { border-bottom: 1px solid var(--border); }
+  .about-features { grid-template-columns: 1fr; }
+  .about-portrait-duo { grid-template-columns: 1fr; gap: 14px; }
+  .about-portrait img { height: 340px; }
+  .hero h1 { font-size: 2.3rem; }
+  .hero-cta { gap: 20px; }
+  .whatsapp-float { width: 52px; height: 52px; bottom: 20px; right: 20px; }
+  .contact-rows { flex-direction: column; gap: 26px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo"><img src="images/logo.webp" alt="Case Nova" class="logo-img"><span class="logo-name">Case<span>Nova</span></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScAzfquJql_DEG2XtnD_9iLUrtLNk5dJh2pzVzGWFhEzTC_tw/viewform" target="_blank" rel="noopener noreferrer" class="btn-quote">Get a Quote</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle day/night mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1 id="heroHeadline">A New Chapter<br>of <em>Home.</em></h1>
+        <p class="hero-byline" id="heroByline">By Vishakha Bhola · India &amp; Beyond</p>
+        <p class="hero-desc" id="heroDesc">"We all imagine a home that truly feels like us. At Case Nova, we transform that dream into a space that hugs you back — crafting interiors that are calm, considered, and deeply personal, shaped by purpose, passion, and precision."</p>
+        <div class="hero-cta">
+          <a href="#portfolio" class="btn-gold">View Our Work</a>
+          <a href="#contact" class="btn-text-link">Start a Project →</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero-1.webp" alt="Case Nova interior project — living room design" class="hero-slide hero-slide-1">
+        <img src="images/hero-2.webp" alt="Case Nova interior project — living room design, alternate view" class="hero-slide hero-slide-2">
+        <img src="images/hero-3.webp" alt="Case Nova interior project — bedroom with skyline view" class="hero-slide hero-slide-3">
+        <img src="images/hero-4.webp" alt="Case Nova interior project — living room TV unit design" class="hero-slide hero-slide-4">
+        <img src="images/hero-5.webp" alt="Case Nova interior project — bedroom design" class="hero-slide hero-slide-5">
+        <img src="images/hero-6.webp" alt="Case Nova interior project — staircase design" class="hero-slide hero-slide-6">
+        <img src="images/hero-7.webp" alt="Case Nova interior project — entrance and vanity design" class="hero-slide hero-slide-7">
+      </div>
+    </div>
+    <div class="hero-stats-bar" id="heroStats">
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-target="5">0</span>
+        <span class="hero-stat-label">Years Experience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-target="75">0</span>
+        <span class="hero-stat-label">Projects Done</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">Global</span>
+        <span class="hero-stat-label">Design Studio</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Residential</span><span class="gold">·</span>
+    <span>Commercial</span><span class="gold">·</span>
+    <span>Concept &amp; Planning</span><span class="gold">·</span>
+    <span>Interior Design</span><span class="gold">·</span>
+    <span>Residential</span><span class="gold">·</span>
+    <span>Commercial</span><span class="gold">·</span>
+    <span>Concept &amp; Planning</span><span class="gold">·</span>
+    <span>Interior Design</span><span class="gold">·</span>
+    <span>Residential</span><span class="gold">·</span>
+    <span>Commercial</span><span class="gold">·</span>
+    <span>Concept &amp; Planning</span><span class="gold">·</span>
+    <span>Interior Design</span><span class="gold">·</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image fade-left">
+        <div class="about-portrait-duo">
+          <div class="about-portrait">
+            <img src="images/vishakha.webp" alt="Vishakha Bhola, Co-founder of Case Nova, Interior Design Head">
+            <div class="about-portrait-tag">
+              <strong>Vishakha Bhola</strong>
+              <span>Co-founder of Case Nova</span>
+              <span>Interior Design Head</span>
+            </div>
+          </div>
+          <div class="about-portrait">
+            <img src="images/suraj.webp" alt="Suraj Shingate, Co-founder of Case Nova, Social Media Head">
+            <div class="about-portrait-tag">
+              <strong>Suraj Shingate</strong>
+              <span>Co-founder of Case Nova</span>
+              <span>Social Media Head</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text fade-right">
+        <span class="tag">About CaseNova</span>
+        <h2>Designing spaces with <em>purpose, passion</em> and <em>precision.</em></h2>
+        <p>At Case Nova, design begins with intention — never decoration for its own sake. We shape homes around Purpose, Passion, and Precision, turning everyday spaces into ones that feel considered, calm, and unmistakably yours. From the first layout to the smallest material choice, nothing is left to chance.</p>
+        <p>This is design meant to be lived in, not just looked at — crafted for homeowners across India and beyond who want spaces that truly breathe.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <h4>Purpose</h4>
+            <p>Every layout designed to solve a real problem</p>
+          </div>
+          <div class="about-feature">
+            <h4>Passion</h4>
+            <p>Spaces crafted with genuine care, not just style</p>
+          </div>
+          <div class="about-feature">
+            <h4>Precision</h4>
+            <p>Every material, light, and detail intentionally chosen</p>
+          </div>
+          <div class="about-feature">
+            <h4>Global</h4>
+            <p>Consultations delivered online, across India and beyond</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services" style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="section-title-wrap fade-in">
+      <span class="section-subtitle">What We Offer</span>
+      <h2 class="section-title">Services</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card slide-up delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12L12 3l9 9M5 10v10h14V10"/></svg>
+        </div>
+        <h3>Interior Design &amp; Planning</h3>
+        <p>Residential and commercial.</p>
+      </div>
+      <div class="service-card slide-up delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20v-6M12 20a8 8 0 1 0-8-8M12 20a8 8 0 1 1 8-8M4 12h16"/></svg>
+        </div>
+        <h3>Online &amp; Onsite Consultation</h3>
+        <p>Expert guidance, wherever you are.</p>
+      </div>
+      <div class="service-card slide-up delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3>Site &amp; Execution Support</h3>
+        <p>Precise coordination, from design to reality.</p>
+      </div>
+      <div class="service-card slide-up delay-4">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+        </div>
+        <h3>Fast-Track Designing <span class="gold">✨</span></h3>
+        <p><span class="gold" style="font-size:0.75rem; letter-spacing:1px; text-transform:uppercase;">Signature</span><br>Design without the wait — quality visuals, technicals sorted, delivered fast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="section" id="portfolio">
+  <div class="container">
+    <div class="section-title-wrap fade-in">
+      <span class="section-subtitle">Our Portfolio</span>
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+    <div class="portfolio-cats">
+      <div class="portfolio-cat-card slide-up delay-1">
+        <span class="portfolio-cat-num">I.</span>
+        <h3>Residential Designs</h3>
+        <p>Homes, apartments, and villas etc.</p>
+        <a href="residential.html" class="portfolio-cat-link">View Residential Projects →</a>
+      </div>
+      <div class="portfolio-cat-card slide-up delay-2">
+        <span class="portfolio-cat-num">II.</span>
+        <h3>Commercial Designs</h3>
+        <p>Cafes, offices, and studios etc.</p>
+        <a href="commercial.html" class="portfolio-cat-link">View Commercial Projects →</a>
+      </div>
+      <div class="portfolio-cat-card slide-up delay-3">
+        <span class="portfolio-cat-num">III.</span>
+        <h3>Online &amp; Onsite Consultation</h3>
+        <p>Book your zoom call or site visit.</p>
+        <a href="consultation.html" class="portfolio-cat-link">View Consultation Gallery →</a>
+      </div>
+      <div class="portfolio-cat-card slide-up delay-4">
+        <span class="portfolio-cat-num">IV.</span>
+        <h3>Fast-Track Designing</h3>
+        <p>See it. Love it. Build it — fast.</p>
+        <span class="portfolio-cat-link is-disabled">Coming Soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-title-wrap fade-in">
+      <span class="section-subtitle">Reviews</span>
+      <h2 class="section-title">What Clients Say</h2>
+    </div>
+    <div class="testimonials-grid">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact" style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="section-title-wrap fade-in">
+      <span class="section-subtitle">Get In Touch</span>
+      <h2 class="section-title">Let's Start Your Chapter</h2>
+    </div>
+    <div class="contact-simple fade-in">
+      <p>Tell us about your space and where you'd like it to go — we'll take it from there.</p>
+      <div class="contact-cta-row">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScAzfquJql_DEG2XtnD_9iLUrtLNk5dJh2pzVzGWFhEzTC_tw/viewform" target="_blank" rel="noopener noreferrer" class="btn-gold">Get a Quote</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.casenovastudio.co@gmail.com" target="_blank" rel="noopener noreferrer" class="btn-outline js-email-link">Email Us</a>
+      </div>
+      <div class="contact-rows">
+        <div class="contact-row-item">
+          <h4>Email</h4>
+          <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.casenovastudio.co@gmail.com" target="_blank" rel="noopener noreferrer" class="js-email-link" data-show-email="true">hello.casenovastudio.co@gmail.com</a></p>
+        </div>
+        <div class="contact-row-item">
+          <h4>Phone</h4>
+          <p><a href="tel:+918800897401" class="js-phone-link" data-show-phone="true">+91 88008 97401</a></p>
+        </div>
+        <div class="contact-row-item">
+          <h4>Studio</h4>
+          <p class="js-hosted-by">Hosted by Vishakha Bhola</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918800897401?text=Hi%20Vishakha%20%F0%9F%91%8B%0AI%27m%20%5BYour%20Name%5D%20from%20%5BCity/Location%5D.%0AMy%20site%20location%20is%20%5BSite%20Location%5D.%0AI%27m%20looking%20for%20%5BService%20Required%5D.%0A%0AI%27d%20love%20to%20discuss%20my%20requirements%20further.%20Can%20I%20book%20a%20call%20with%20you%3F%0AThank%20you%21" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo-row">
+          <img src="images/logo.webp" alt="Case Nova" class="footer-logo-img">
+          <span class="footer-logo">Case<span>Nova</span></span>
+        </div>
+        <p>We design the world, one space at a time — global interior design by Vishakha Bhola.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/casenovabyvishakha/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></svg></a>
+          <a href="https://www.youtube.com/@casenovabyvishakha" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9.5v5l5-2.5z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.linkedin.com/in/case-nova-806495377" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Interior Design &amp; Planning</a></li>
+          <li><a href="#services">Online &amp; Onsite Consultation</a></li>
+          <li><a href="#services">Site &amp; Execution Support</a></li>
+          <li><a href="#services">Fast-Track Designing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li class="js-hosted-by">Hosted by Vishakha Bhola</li>
+          <li><a href="tel:+918800897401" class="js-phone-link" data-show-phone="true">+91 88008 97401</a></li>
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello.casenovastudio.co@gmail.com" target="_blank" rel="noopener noreferrer" class="js-email-link" data-show-email="true">hello.casenovastudio.co@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 <span class="gold">Case Nova</span> · All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============ THEME TOGGLE (day/night) ============ */
+(function() {
+  const saved = localStorage.getItem('casenova-theme');
+  if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+})();
+document.getElementById('themeToggle').addEventListener('click', () => {
+  const html = document.documentElement;
+  const isLight = html.getAttribute('data-theme') === 'light';
+  if (isLight) {
+    html.removeAttribute('data-theme');
+    localStorage.setItem('casenova-theme', 'dark');
+  } else {
+    html.setAttribute('data-theme', 'light');
+    localStorage.setItem('casenova-theme', 'light');
+  }
+});
+
+/* ============ NAVBAR SCROLL ============ */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* ============ MOBILE MENU ============ */
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('open');
+  });
+});
+
+/* ============ INTERSECTION OBSERVER (fade in on scroll) ============ */
+const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -60px 0px' };
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.fade-in, .fade-left, .fade-right, .slide-up').forEach(el => {
+  observer.observe(el);
+});
+
+/* ============ TESTIMONIALS (from CMS-editable data/testimonials.json) ============ */
+async function loadTestimonials() {
+  const grid = document.querySelector('.testimonials-grid');
+  if (!grid) return;
+  try {
+    const res = await fetch('data/testimonials.json');
+    const data = await res.json();
+    const fadeClasses = ['fade-left', 'fade-in', 'fade-right'];
+    const delayClasses = ['delay-1', 'delay-2', 'delay-3', 'delay-4', 'delay-5', 'delay-6'];
+    data.items.forEach((t, i) => {
+      const initial = t.name.replace(/^(Mr\.|Mrs\.|Ms\.)\s*/, '').charAt(0).toUpperCase();
+      const card = document.createElement('div');
+      card.className = `testimonial-card ${fadeClasses[i % 3]} ${delayClasses[i % 6]}`;
+      card.innerHTML = `
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">${t.text}</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">${initial}</div>
+          <div class="author-info">
+            <h4>${t.name}</h4>
+            <span>${t.category} · ${t.location}</span>
+          </div>
+        </div>`;
+      grid.appendChild(card);
+      observer.observe(card);
+    });
+  } catch (err) {
+    console.error('Could not load testimonials:', err);
+  }
+}
+loadTestimonials();
+
+/* ============ COUNTER ANIMATION ============ */
+const statsSection = document.getElementById('heroStats');
+let countersStarted = false;
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !countersStarted) {
+      countersStarted = true;
+      document.querySelectorAll('.hero-stat-num[data-target]').forEach(counter => {
+        const target = +counter.dataset.target;
+        const duration = 1800;
+        const start = performance.now();
+        const step = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          counter.textContent = Math.floor(eased * target) + '+';
+          if (progress < 1) requestAnimationFrame(step);
+          else counter.textContent = target + '+';
+        };
+        requestAnimationFrame(step);
+      });
+    }
+  });
+}, { threshold: 0.4 });
+counterObserver.observe(statsSection);
+</script>
+
+<script>
+/* ============ SITE CONTENT (hero + contact, from CMS-editable data/site.json) ============ */
+(async function loadSiteContent() {
+  try {
+    const res = await fetch('data/site.json');
+    const data = await res.json();
+
+    // Hero (only present on index.html)
+    const headingEl = document.getElementById('heroHeadline');
+    if (headingEl && data.hero) {
+      headingEl.innerHTML = `${data.hero.heading_line1}<br>of <em>${data.hero.heading_emphasis}</em>`;
+    }
+    const bylineEl = document.getElementById('heroByline');
+    if (bylineEl && data.hero) bylineEl.textContent = data.hero.byline;
+    const descEl = document.getElementById('heroDesc');
+    if (descEl && data.hero) descEl.innerHTML = data.hero.quote;
+
+    // Contact — email links (Gmail compose href + optionally visible text)
+    if (data.contact) {
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(data.contact.email)}`;
+      document.querySelectorAll('.js-email-link').forEach(el => {
+        el.href = gmailUrl;
+        if (el.dataset.showEmail === 'true') el.textContent = data.contact.email;
+      });
+
+      document.querySelectorAll('.js-phone-link').forEach(el => {
+        el.href = 'tel:+' + data.contact.phone_e164;
+        if (el.dataset.showPhone === 'true') el.textContent = data.contact.phone_display;
+      });
+
+      document.querySelectorAll('.js-hosted-by').forEach(el => {
+        el.textContent = 'Hosted by ' + data.contact.hosted_by;
+      });
+
+      const waLink = document.querySelector('.whatsapp-float');
+      if (waLink) {
+        const [, query] = waLink.href.split('?text=');
+        waLink.href = `https://wa.me/${data.contact.phone_e164}?text=${query || ''}`;
+      }
+    }
+  } catch (err) {
+    console.error('Could not load site content:', err);
+  }
+})();
+</script>
+</body>
+</html>

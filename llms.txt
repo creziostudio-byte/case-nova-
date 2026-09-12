@@ -1,0 +1,26 @@
+# Case Nova
+
+> Case Nova is a global interior design studio led by Vishakha Bhola, offering end-to-end residential and commercial interior design, online and onsite consultations, and fast-track design services across India and beyond.
+
+Case Nova designs homes and commercial spaces around three principles: purpose, passion, and precision. The studio handles everything from first concept and space planning to material selection, execution support, and final handover.
+
+## Founders
+- Vishakha Bhola — Interior Design Head, Co-founder
+- Suraj Shingate — Social Media Head, Co-founder
+
+## Services
+- Interior Design & Planning (residential and commercial)
+- Online & Onsite Consultation
+- Site & Execution Support
+- Fast-Track Designing (signature service — expedited design delivery)
+
+## Pages
+- [Home](https://casenovastudio.com/): Studio overview, services, about, testimonials, and contact
+- [Residential Portfolio](https://casenovastudio.com/residential.html): Full home interior design projects across India
+- [Commercial Portfolio](https://casenovastudio.com/commercial.html): Showroom, cafe, and furniture design projects
+- [Consultation](https://casenovastudio.com/consultation.html): Photos and process for online and onsite design consultations
+
+## Contact
+- Email: hello.casenovastudio.co@gmail.com
+- Phone/WhatsApp: +91 88008 97401
+- Service area: India and international clients (remote consultations)

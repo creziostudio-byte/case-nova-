@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "name": "Mr. Irfan",
+      "category": "Residential",
+      "location": "Dharwad, Karnataka",
+      "text": "Have you ever imagined entrusting the interior work of your dream home to someone you had only met online? Vishakha took charge of my home's interiors, and her ability to understand your ideas and transform your vision into reality is remarkable."
+    },
+    {
+      "name": "Mr. Dev",
+      "category": "Residential",
+      "location": "Ludhiana, Punjab",
+      "text": "Every step was explained clearly, with complete transparency on costs and timelines. The best material choices were provided, along with online supervision throughout the project until the final handover."
+    },
+    {
+      "name": "Mr. Rajeev",
+      "category": "Residential",
+      "location": "Gurdaspur, Dinanagar, Punjab",
+      "text": "The entire design process was smooth and well-organized. The team provided complete support from our very first interaction through the final documentation, with every detail carefully explained."
+    },
+    {
+      "name": "Mr. Anmol Bhatia",
+      "category": "Residential",
+      "location": "Bharaich, Uttar Pradesh",
+      "text": "The bedroom was designed with a premium aesthetic, while maintaining excellent quality and attention to detail throughout. The overall design felt elegant, comfortable, and beautifully balanced."
+    },
+    {
+      "name": "Mr. Hitesh Kumar",
+      "category": "Residential",
+      "location": "Nazafgarh, South West Delhi",
+      "text": "Ma'am explained everything clearly during our first site visit, which helped us understand our vision and decide exactly what we wanted for our home. Highly recommended for their professionalism and clarity."
+    },
+    {
+      "name": "Mrs. Pakhi Gujral",
+      "category": "Residential",
+      "location": "Palam Vihar, Gurgaon",
+      "text": "Vishakha was extremely polite, supportive, and approachable throughout the entire process. Her guidance and attention to detail made the overall experience truly smooth and comfortable."
+    },
+    {
+      "name": "Mrs. Rakesh Gupta",
+      "category": "Commercial",
+      "location": "Morena, Madhya Pradesh",
+      "text": "The add-ons to the existing design gave the bakery a completely refreshed look and ambience. The furniture was thoughtfully designed, and our requirements were addressed within just two consultations."
+    },
+    {
+      "name": "Mrs. Majid Khan",
+      "category": "Residential",
+      "location": "Mumbai, Thane",
+      "text": "Despite the distance, the site supervision was excellent and never felt like it compromised the quality of work. Everything was properly planned, coordinated, and reviewed at every stage."
+    },
+    {
+      "name": "Mrs. Ananya Mehta",
+      "category": "Residential",
+      "location": "Pune, Maharashtra",
+      "text": "The entire process was handled with great attention to detail. The design perfectly balanced functionality and elegance, and every suggestion was thoughtfully incorporated. The final result felt exactly like the home we had envisioned."
+    }
+  ]
+}

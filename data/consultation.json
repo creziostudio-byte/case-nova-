@@ -1,0 +1,27 @@
+{
+  "projects": [
+    {
+      "title": "Onsite Consultations",
+      "location": "In-person site visits",
+      "photos": [
+        "images/consultation/onsite/img-6555.webp",
+        "images/consultation/onsite/img-6878.webp",
+        "images/consultation/onsite/img-6882.webp",
+        "images/consultation/onsite/img-6883.webp",
+        "images/consultation/onsite/img-6899.webp",
+        "images/consultation/onsite/img-8246.webp",
+        "images/consultation/onsite/img-8307.webp"
+      ]
+    },
+    {
+      "title": "Online Consultations",
+      "location": "Video calls & studio sessions",
+      "photos": [
+        "images/consultation/online/case-nova-profile-1.webp",
+        "images/consultation/online/meet-1.webp",
+        "images/consultation/online/studio-1.webp",
+        "images/consultation/online/video-consultation.webp"
+      ]
+    }
+  ]
+}

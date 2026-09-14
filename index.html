@@ -644,14 +644,27 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   position: relative;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .portfolio-cat-card:nth-child(2n) { border-right: none; }
 .portfolio-cat-card:nth-child(3), .portfolio-cat-card:nth-child(4) { border-bottom: none; }
 .portfolio-cat-card:hover { background: var(--bg-soft); }
+.portfolio-cat-icon {
+  width: 64px; height: 64px;
+  margin: 0 auto 20px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  transition: all 0.4s;
+}
+.portfolio-cat-card:hover .portfolio-cat-icon { background: var(--gold); color: var(--on-gold); transform: rotate(360deg); }
+.portfolio-cat-icon svg { width: 28px; height: 28px; }
 .portfolio-cat-num {
   display: block;
   font-family: 'Cormorant Garamond', serif;
@@ -890,6 +903,8 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   .portfolio-cat-card:nth-child(1), .portfolio-cat-card:nth-child(2) { border-bottom: 1px solid var(--border); }
   .portfolio-cat-card:nth-child(3), .portfolio-cat-card:nth-child(4) { border-bottom: none; }
   .portfolio-cat-card { padding: 22px 14px; }
+  .portfolio-cat-icon { width: 44px; height: 44px; margin-bottom: 12px; }
+  .portfolio-cat-icon svg { width: 20px; height: 20px; }
   .portfolio-cat-num { font-size: 0.8rem; margin-bottom: 4px; }
   .portfolio-cat-card h3 { font-size: 1.05rem; margin-bottom: 8px; line-height: 1.25; }
   .portfolio-cat-card p { font-size: 0.78rem; margin-bottom: 14px; }
@@ -906,7 +921,95 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   .contact-rows { flex-direction: column; gap: 26px; }
 }
 </style>
-<base target="_blank">
+<style>
+/* ===== Portfolio polish: slightly larger + premium motion ===== */
+.portfolio-cats {
+  gap: 2px;
+}
+
+.portfolio-cat-card {
+  min-height: 300px;
+  padding: 34px 30px;
+  transition:
+    transform 0.45s cubic-bezier(.2,.8,.2,1),
+    background 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-cat-card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle, rgba(201,168,76,.10) 0%, transparent 55%);
+  opacity: 0;
+  transform: scale(.7);
+  transition: opacity .55s ease, transform .7s ease;
+  pointer-events: none;
+}
+
+.portfolio-cat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0,0,0,.28);
+  z-index: 2;
+}
+
+.portfolio-cat-card:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.portfolio-cat-card h3,
+.portfolio-cat-card p,
+.portfolio-cat-card .portfolio-cat-link {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-cat-num {
+  transition: transform .4s ease, letter-spacing .4s ease;
+}
+
+.portfolio-cat-card:hover .portfolio-cat-num {
+  transform: translateX(4px);
+  letter-spacing: 2px;
+}
+
+.portfolio-cat-link {
+  transition: transform .35s ease, color .35s ease, border-color .35s ease;
+}
+
+.portfolio-cat-card:hover .portfolio-cat-link {
+  transform: translateX(6px);
+}
+
+/* Scroll/reveal animation */
+.portfolio-cat-card.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.portfolio-cat-card.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-cat-card.slide-up.visible:hover {
+  transform: translateY(-8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-cat-card,
+  .portfolio-cat-card::before,
+  .portfolio-cat-num,
+  .portfolio-cat-link {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -1248,10 +1351,16 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navLinks.classList.toggle('open');
 });
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
     hamburger.classList.remove('active');
     navLinks.classList.remove('open');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', link.getAttribute('href'));
+    }
   });
 });
 
@@ -1373,5 +1482,29 @@ counterObserver.observe(statsSection);
   }
 })();
 </script>
+
+<script>
+/* Portfolio reveal animation */
+document.addEventListener('DOMContentLoaded', () => {
+  const portfolioCards = document.querySelectorAll('.portfolio-cat-card.slide-up');
+
+  if (!('IntersectionObserver' in window)) {
+    portfolioCards.forEach(card => card.classList.add('visible'));
+    return;
+  }
+
+  const portfolioObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  portfolioCards.forEach(card => portfolioObserver.observe(card));
+});
+</script>
+
 </body>
 </html>

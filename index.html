@@ -274,7 +274,7 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
 /* ============ HERO ============ */
 .hero {
-  padding: 160px 0 0;
+  padding: 105px 0 0;
   position: relative;
   overflow: hidden;
 }
@@ -301,7 +301,7 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   font-size: clamp(2.6rem, 5vw, 4.4rem);
   line-height: 1.08;
   font-weight: 400;
-  margin-bottom: 26px;
+  margin-bottom: 18px;
   color: var(--white);
   opacity: 0;
   animation: fadeInUp 0.9s 0.3s forwards;
@@ -312,7 +312,7 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
   opacity: 0;
   animation: fadeInUp 0.9s 0.5s forwards;
 }
@@ -320,7 +320,7 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   font-size: 1.05rem;
   color: var(--grey);
   max-width: 460px;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
   font-weight: 300;
   opacity: 0;
   animation: fadeInUp 0.9s 0.7s forwards;
@@ -385,11 +385,11 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--border);
-  margin-top: 70px;
+  margin-top: 26px;
 }
 .hero-stat {
   text-align: center;
-  padding: 34px 20px;
+  padding: 16px 20px;
   position: relative;
 }
 .hero-stat:not(:last-child)::after {
@@ -644,20 +644,38 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   position: relative;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio-cat-card:nth-child(2n) { border-right: none; }
 .portfolio-cat-card:nth-child(3), .portfolio-cat-card:nth-child(4) { border-bottom: none; }
 .portfolio-cat-card:hover { background: var(--bg-soft); }
+.portfolio-cat-icon {
+  width: 64px; height: 64px;
+  margin: 0 auto 20px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  transition: all 0.4s;
+}
+.portfolio-cat-card:hover .portfolio-cat-icon { background: var(--gold); color: var(--on-gold); transform: rotate(360deg); }
+.portfolio-cat-icon svg { width: 28px; height: 28px; }
 .portfolio-cat-num {
   display: block;
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
   color: var(--gold);
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
-.portfolio-cat-card h3 { font-size: 2rem; margin-bottom: 18px; font-weight: 400; }
-.portfolio-cat-card p { color: var(--grey); font-size: 0.98rem; margin-bottom: 32px; max-width: 380px; }
+.portfolio-cat-card h3 { font-size: 1.7rem; margin-bottom: 14px; font-weight: 400; }
+.portfolio-cat-card p { color: var(--grey); font-size: 0.92rem; margin-bottom: 26px; max-width: 320px; }
+.portfolio-cat-card .portfolio-cat-link { margin-top: auto; }
 .portfolio-cat-link {
   display: inline-block;
   color: var(--gold-light);
@@ -880,10 +898,17 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 }
 @media (max-width: 580px) {
   .services-grid, .testimonials-grid, .footer-grid { grid-template-columns: 1fr; }
-  .portfolio-cats { grid-template-columns: 1fr; }
-  .portfolio-cat-card { border-right: none !important; border-bottom: 1px solid var(--border); }
-  .portfolio-cat-card:last-child { border-bottom: none; }
-  .portfolio-cat-card { padding: 40px 28px; }
+  .portfolio-cats { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-cat-card:nth-child(2n) { border-right: none !important; }
+  .portfolio-cat-card:nth-child(1), .portfolio-cat-card:nth-child(2) { border-bottom: 1px solid var(--border); }
+  .portfolio-cat-card:nth-child(3), .portfolio-cat-card:nth-child(4) { border-bottom: none; }
+  .portfolio-cat-card { padding: 22px 14px; }
+  .portfolio-cat-icon { width: 44px; height: 44px; margin-bottom: 12px; }
+  .portfolio-cat-icon svg { width: 20px; height: 20px; }
+  .portfolio-cat-num { font-size: 0.8rem; margin-bottom: 4px; }
+  .portfolio-cat-card h3 { font-size: 1.05rem; margin-bottom: 8px; line-height: 1.25; }
+  .portfolio-cat-card p { font-size: 0.78rem; margin-bottom: 14px; }
+  .portfolio-cat-link { font-size: 0.65rem; letter-spacing: 1px; }
   .hero-stats-bar { grid-template-columns: 1fr; }
   .hero-stat:not(:last-child)::after { display: none; }
   .hero-stat:not(:last-child) { border-bottom: 1px solid var(--border); }
@@ -896,7 +921,6 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
   .contact-rows { flex-direction: column; gap: 26px; }
 }
 </style>
-<base target="_blank">
 </head>
 <body>
 
@@ -946,7 +970,7 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
         <img src="images/hero-7.webp" alt="Case Nova interior project — entrance and vanity design" class="hero-slide hero-slide-7">
       </div>
     </div>
-    <div class="hero-stats-bar slide-up" id="heroStats">
+    <div class="hero-stats-bar fade-in" id="heroStats">
       <div class="hero-stat">
         <span class="hero-stat-num" data-target="5">0</span>
         <span class="hero-stat-label">Years Experience</span>
@@ -1082,24 +1106,36 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
     </div>
     <div class="portfolio-cats">
       <div class="portfolio-cat-card slide-up delay-1">
+        <div class="portfolio-cat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12L12 3l9 9M5 10v10h14V10"/></svg>
+        </div>
         <span class="portfolio-cat-num">I.</span>
         <h3>Residential Designs</h3>
         <p>Homes, apartments, and villas etc.</p>
         <a href="residential.html" class="portfolio-cat-link">View Residential Projects →</a>
       </div>
       <div class="portfolio-cat-card slide-up delay-2">
+        <div class="portfolio-cat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M6 21V8l6-4 6 4v13M9 21v-6h6v6M9 12h.01M15 12h.01M9 9h.01M15 9h.01"/></svg>
+        </div>
         <span class="portfolio-cat-num">II.</span>
         <h3>Commercial Designs</h3>
         <p>Cafes, offices, and studios etc.</p>
         <a href="commercial.html" class="portfolio-cat-link">View Commercial Projects →</a>
       </div>
       <div class="portfolio-cat-card slide-up delay-3">
+        <div class="portfolio-cat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20v-6M12 20a8 8 0 1 0-8-8M12 20a8 8 0 1 1 8-8M4 12h16"/></svg>
+        </div>
         <span class="portfolio-cat-num">III.</span>
         <h3>Online &amp; Onsite Consultation</h3>
         <p>Book your zoom call or site visit.</p>
         <a href="consultation.html" class="portfolio-cat-link">View Consultation Gallery →</a>
       </div>
       <div class="portfolio-cat-card slide-up delay-4">
+        <div class="portfolio-cat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+        </div>
         <span class="portfolio-cat-num">IV.</span>
         <h3>Fast-Track Designing</h3>
         <p>See it. Love it. Build it — fast.</p>
@@ -1293,41 +1329,29 @@ async function loadTestimonials() {
 loadTestimonials();
 
 /* ============ COUNTER ANIMATION ============ */
-/* Stats stay at 0 and only count up once the stats bar has been scrolled
-   up past the "breach line" (about midway up the viewport) — not on load. */
 const statsSection = document.getElementById('heroStats');
 let countersStarted = false;
-
-function startCounters() {
-  if (countersStarted) return;
-  countersStarted = true;
-  document.querySelectorAll('.hero-stat-num[data-target]').forEach(counter => {
-    const target = +counter.dataset.target;
-    const duration = 1800;
-    const start = performance.now();
-    const step = (now) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      counter.textContent = Math.floor(eased * target) + '+';
-      if (progress < 1) requestAnimationFrame(step);
-      else counter.textContent = target + '+';
-    };
-    requestAnimationFrame(step);
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !countersStarted) {
+      countersStarted = true;
+      document.querySelectorAll('.hero-stat-num[data-target]').forEach(counter => {
+        const target = +counter.dataset.target;
+        const duration = 1800;
+        const start = performance.now();
+        const step = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          counter.textContent = Math.floor(eased * target) + '+';
+          if (progress < 1) requestAnimationFrame(step);
+          else counter.textContent = target + '+';
+        };
+        requestAnimationFrame(step);
+      });
+    }
   });
-}
-
-function checkStatsScroll() {
-  if (countersStarted || !statsSection) return;
-  // The green breach line sits around 55% of the viewport height.
-  // Fire only when the stats bar's top crosses above that line.
-  const breachLine = window.innerHeight * 0.55;
-  const rect = statsSection.getBoundingClientRect();
-  if (rect.top < breachLine && rect.bottom > 0) startCounters();
-}
-
-window.addEventListener('scroll', checkStatsScroll, { passive: true });
-window.addEventListener('load', checkStatsScroll);
-checkStatsScroll();
+}, { threshold: 0.4 });
+counterObserver.observe(statsSection);
 </script>
 
 <script>
